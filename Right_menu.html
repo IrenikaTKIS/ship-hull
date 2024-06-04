@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1251" http-equiv="content-type">
+    <title>Buttons</title>
+  </head>
+  <body>
+    <table style="width: 200px; height: 100px; vertical-align: top;" border="0">
+      <tbody>
+        <tr>
+          <td style="padding: 0cm 5.4pt; vertical-align: top; text-align: left; width: 182px;">
+           <br> <input name="Measure" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.addMeasure()">Source Points
+           <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.setLines()">Set Main Lines; 
+           <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.setForeSurface()">Fore Shell; 
+           <!-- <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.setSurface()">Middle Shell_1; -->
+           <!-- <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.setSurface_2()">Middle Shell_2; -->
+           <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.setSurface_3()">Middle Shell;
+           <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.setWholeSurface()">Sum Shell;
+           <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.setAftSurface()">Aft Shell;
+           <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.ExportSummSurface()">Export Sum Shell;
+           <!-- <br> <input name="Fit by SGM" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.Surf_distances()">Point Tollerance;		   
+           <br> <input name="Original mesh" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.originalMeshbyEV()">Target in PCS; -->
+           <!-- <br> <input name="Rotate by Eigen Value" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.rotateModelbyEV()">PCA Fit; -->
+<!--            <br> <input name="Rotate by Matrix" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.rotateaboutXbyMatrix4()">Rotate about X;
+           <br> <input name="Rotate by Matrix" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.rotateaboutYbyMatrix4()">Rotate about Y;
+           <br> <input name="Rotate by Matrix" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.rotateaboutZbyMatrix4()">Rotate about Z;
+ -->           <!-- <br> <input name="Show/Hide" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.showHidePoints()">Show/hide theory; -->
+           <!-- <br> <input name="Lines" type="button" onclick="parent.document.getElementById('Viewer').contentWindow.drawLines()">Lines;-->
+        </tr>
+			<br><form id="dialogID" style="display: block; padding: 0px 3px 5px 3px; margin: 0px 3px 5px 3px;">
+				<button id="dialog_button" class="button" type="button">Open file</button></form>
+			<br><form> <input id="dateOutput0" style="width:100pt; border: groove" type="text"> File to Load</form>
+           <br><form> <input id="dateOutput1" style="width:100pt; border: groove" type="text"> Define Step </form>
+<!--            <form> <input id="dateOutput7" style="width:60pt; border: groove" type="text"> Time, sec </form>
+ -->		<br><form> <input id="dateOutput5" style="width:100pt; border: groove" type="text"> Space, mm </form>
+           <br><form> <input id="dateOutput6" style="width:100pt; border: groove" type="text"> 1st frame </form>
+           <br><form> <input id="dateOutput7" style="width:100pt; border: groove" type="text"> 2nd frame </form>
+           <br><form> <input id="dateOutput2" style="width:100pt; border: groove" type="text"> 3rd frame </form>
+           <br><form> <input id="dateOutput3" style="width:100pt; border: groove" type="text"> Point step </form>
+       </tbody>
+    </table>
+  </body>
+</html>
